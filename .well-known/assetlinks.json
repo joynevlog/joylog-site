@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.joylog.android",
+    "sha256_cert_fingerprints": [
+      "AE:D6:CE:1A:45:CD:43:D9:EF:8B:8B:91:AB:86:6B:40:B4:69:AD:28:B7:A8:54:BD:4E:68:D1:5A:2D:8A:33:A5"
+    ]
+  }
+}]

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>조이로그</title>
+<style>
+:root{color-scheme:light dark;--bg:#faf8f4;--fg:#2e2a24;--mut:#6b6357;--line:#e3ddd2;--card:#fff;--accent:#e8896a}
+@media(prefers-color-scheme:dark){:root{--bg:#17161a;--fg:#e9e6e0;--mut:#9b948a;--line:#312e35;--card:#1e1c22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);line-height:1.75;
+font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif}
+main{max-width:46rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+a{color:inherit}
+h1{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 .5rem}
+p{font-size:.95rem}
+nav.top{font-size:.85rem;color:var(--mut);margin-bottom:2rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem 1.25rem;margin:1.5rem 0}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:600;font-size:.95rem;
+padding:.85rem 1rem;border-radius:10px;margin:.6rem 0;border:1px solid var(--line);background:var(--card)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.note{color:var(--mut);font-size:.85rem}
+footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--line);
+font-size:.82rem;color:var(--mut)}
+[hidden]{display:none!important}
+</style></head><body><main>
+<nav class="top"><a href="/">조이로그</a></nav>
+
+<div id="join" hidden>
+  <h1>가족 초대를 받으셨어요</h1>
+  <p>조이로그 앱에서 이 초대를 열면, 아기의 기록을 함께 남기고 함께 볼 수 있어요.</p>
+  <div class="card">
+    <a id="open-app" class="btn primary" href="#">조이로그 앱으로 열기</a>
+    <a class="btn" href="https://apps.apple.com/kr/app/id6804470047">App Store에서 받기 (iPhone)</a>
+    <a id="play-link" class="btn" href="#" hidden>Google Play에서 받기 (Android)</a>
+    <p class="note">앱을 설치한 뒤, 이 페이지의 링크를 다시 열거나 앱의 설정 → 함께 쓰기에서
+    초대 코드를 직접 입력해도 돼요. 초대는 7일 뒤 만료됩니다.</p>
+  </div>
+</div>
+
+<div id="notfound" hidden>
+  <h1>페이지를 찾지 못했어요</h1>
+  <p>주소가 바뀌었거나 잘못 입력된 것 같아요. <a href="/">첫 페이지로 돌아가기</a></p>
+</div>
+
+<footer>조이로그 · <a href="/privacy.html">개인정보처리방침</a> · <a href="/support.html">도움말</a></footer>
+
+<script>
+// GitHub Pages 는 /join/<code> 같은 경로를 404 로 보낸다 — 여기서 받아 준다.
+// 코드는 앱 딥링크에만 실어 보내고, 이 페이지는 코드를 어디에도 저장하지 않는다.
+(function () {
+  var m = location.pathname.match(/^\/join\/([A-Za-z0-9]{6,32})\/?$/);
+  var join = document.getElementById("join");
+  var notfound = document.getElementById("notfound");
+  if (m) {
+    join.hidden = false;
+    // 같은 https 링크가 앱 링크(설치 시) — 재탐색으로 앱 열기를 다시 시도한다.
+    document.getElementById("open-app").href = location.href;
+    // Google Play 출시 후 아래 줄의 hidden 을 지우면 안드로이드 버튼이 켜진다.
+    var play = document.getElementById("play-link");
+    play.href = "https://play.google.com/store/apps/details?id=app.joylog.android";
+  } else {
+    notfound.hidden = false;
+  }
+})();
+</script>
+</main></body></html>
