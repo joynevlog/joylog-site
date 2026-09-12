@@ -31,46 +31,71 @@ font-size:.82rem;color:var(--mut)}
 </style></head><body><main>
 <nav class="top"><a href="/">조이로그</a></nav>
 <h1>개인정보처리방침 — 조이로그</h1>
-<p><strong>시행일</strong>: 2026-09-01 · <strong>버전</strong>: <code>2026-09-01</code></p>
+<p><strong>시행일</strong>: <code>2026-09-13</code> (재동의 빌드 출시일) · <strong>버전</strong>: 시행일과 같은 값 · <strong>이전 버전</strong>: <code>2026-09-01</code></p>
 <hr>
+<h2>0. 동의 안내 — 동의할 때 알려 드리는 것</h2>
+<p>로그인할 때 아래 동의를 <strong>항목마다 따로</strong> 받습니다. 아기의 건강 기록은 민감정보라서 <strong>다른 동의와 별도로</strong> 받습니다. 아기의 개인정보에 대한 동의는 <strong>보호자(법정대리인)로서</strong> 하시는 동의입니다.</p>
+<div class="tw"><table><thead><tr><th>동의</th><th>목적</th><th>항목</th><th>보유·이용 기간</th><th>거부할 권리와 불이익</th></tr></thead><tbody><tr><td><strong>[필수] 개인정보 수집·이용</strong></td><td>로그인, 기기 간 동기화, 초대한 가족과 함께 보기</td><td>2-1 계정 정보 · 아기 이름·태명·생년월일·출생 시각·성별 · 2-3 사진(넣은 경우)</td><td>탈퇴할 때까지 (4절)</td><td>거부할 수 있습니다. 거부하면 로그인과 함께 쓰기를 쓸 수 없고, <strong>기기 안의 기록 기능은 그대로</strong> 쓸 수 있습니다</td></tr><tr><td><strong>[필수] 아기 건강 기록(민감정보) 처리 — 별도 동의</strong></td><td>아기 기록의 동기화와 초대한 가족과 함께 보기</td><td>2-2 의 이른둥이 주수 · 활동 기록 · 성장 · 처음 · 일기</td><td>탈퇴할 때까지 (4절)</td><td>거부할 수 있습니다. 거부하면 함께 쓰기를 쓸 수 없고, <strong>기기 안의 기록 기능은 그대로</strong> 쓸 수 있습니다</td></tr><tr><td>[선택] 혜택·소식 알림</td><td>새 기능·혜택 소식 알림</td><td>동의 여부</td><td>철회할 때까지</td><td>거부해도 모든 기능을 쓸 수 있습니다</td></tr></tbody></table></div>
 <h2>1. 요약 — 먼저 알아야 할 것</h2>
-<p>조이로그는 <strong>자체 서버를 운영하지 않습니다.</strong> 아기 기록은 회원님의 기기에 저장되고, 동기화를 켜면 <strong>회원님 본인의 iCloud</strong>에만 올라갑니다. 저희가 그 기록을 보관하거나 들여다보는 경로는 없습니다.</p>
-<p>광고·분석 목적의 제3자 SDK를 <strong>하나도 넣지 않았습니다.</strong></p>
+<p>아기 기록과 사진은 <strong>회원님의 기기에 먼저 저장됩니다.</strong> 로그인하고 &quot;함께 쓰기&quot;를 켜면 기록과 사진이 <strong>조이로그 동기화 서버</strong>(Cloudflare 인프라 위에서 운영)에 보관되어, 초대한 가족과 함께 보고 기기를 바꿔도 이어집니다. <strong>함께 쓰기를 켜지 않으면 기록과 사진은 기기 밖으로 나가지 않습니다.</strong></p>
+<p>아기 기록은 <strong>건강에 관한 정보(민감정보)</strong> 라서 따로 동의를 받습니다. 기록과 사진을 광고·분석에 쓰지 않으며, 광고·분석 목적의 제3자 SDK 를 <strong>하나도 넣지 않았습니다.</strong></p>
 <h2>2. 수집하는 개인정보</h2>
 <h3>2-1. 계정 정보 (로그인한 경우에만)</h3>
 <p>로그인은 <strong>선택</strong>입니다. 로그인하지 않아도 모든 기록 기능을 쓸 수 있습니다.</p>
-<div class="tw"><table><thead><tr><th>항목</th><th>출처</th><th>저장 위치</th></tr></thead><tbody><tr><td>이름(표시 이름)</td><td>Apple 로그인이 제공하는 범위</td><td>기기</td></tr><tr><td>이메일</td><td>〃</td><td>기기</td></tr><tr><td>동의 이력 (약관·개인정보·만 14세·마케팅, 동의 시각, 버전)</td><td>이용자 입력</td><td>기기</td></tr><tr><td>인증 토큰</td><td>로그인 제공자</td><td><strong>기기 Keychain</strong></td></tr></tbody></table></div>
-<h3>2-2. 아기의 건강 관련 기록</h3>
-<p><strong>아동의 건강 정보에 해당하므로 특별히 다룹니다.</strong></p>
-<div class="tw"><table><thead><tr><th>항목</th><th>예</th></tr></thead><tbody><tr><td>아기 정보</td><td>이름 또는 태명, 생년월일, 출생 시각(선택), 성별, 이른둥이 주수</td></tr><tr><td>활동 기록</td><td>수유·수면·기저귀·이유식·목욕·투약·체온·병원·놀이의 시각과 값, 메모</td></tr></tbody></table></div>
-<h3>2-3. 수집하지 않는 것</h3>
-<ul><li><strong>위치 정보, 연락처, 사진, 마이크, 광고 식별자(IDFA)를 수집하지 않습니다</strong></li><li>이용 행태를 추적하는 분석 도구를 넣지 않았습니다</li></ul>
+<div class="tw"><table><thead><tr><th>항목</th><th>출처</th><th>저장 위치</th></tr></thead><tbody><tr><td>이름(표시 이름)</td><td>로그인 제공자(Apple·카카오·Google)가 제공하는 범위</td><td>기기</td></tr><tr><td>이메일</td><td>〃</td><td>기기</td></tr><tr><td>동의 이력 (약관·개인정보·만 14세·마케팅, 동의 시각, 버전)</td><td>이용자 입력</td><td>기기</td></tr><tr><td>인증 토큰</td><td>로그인 제공자</td><td><strong>기기 Keychain</strong></td></tr><tr><td>계정 식별자 (가명화된 무작위 ID 와 로그인 제공자 종류)</td><td>로그인 시 서버가 생성</td><td>동기화 서버</td></tr><tr><td>동기화 세션 토큰</td><td>로그인 시 서버가 발급</td><td>기기 Keychain + 서버(최대 90일)</td></tr><tr><td>기기 식별자 (앱 설치마다 만드는 무작위 값 — <strong>광고 식별자가 아닙니다</strong>)</td><td>앱이 생성</td><td>기기 + 함께 쓰기를 켠 경우 동기화 서버 (기록이 어느 기기에서 왔는지 구분)</td></tr></tbody></table></div>
+<p><strong>이름과 이메일은 서버에 저장하지 않습니다.</strong> 로그인 확인 순간에만 스쳐 지나가며, 서버에는 가명화된 식별자만 남습니다.</p>
+<h3>2-2. 아기 정보와 기록</h3>
+<p><strong>이른둥이 주수와 기록(활동 기록·성장·처음·일기)은 아동의 건강에 관한 정보 — 개인정보 보호법 제23조의 민감정보로 보고 따로 동의를 받습니다 (0절).</strong> 이름·태명·생년월일·출생 시각·성별은 개인정보 수집·이용 동의로 받습니다.</p>
+<div class="tw"><table><thead><tr><th>항목</th><th>예</th></tr></thead><tbody><tr><td>아기 정보</td><td>이름 또는 태명, 생년월일, 출생 시각(선택), 성별, 이른둥이 주수</td></tr><tr><td>활동 기록</td><td>수유(모유·분유)·유축·수면·기저귀(변의 색·형태 포함)·이유식·목욕·투약·체온·<strong>병원(예방접종·영유아검진을 기록하는 경우 맞은 백신의 종류와 차수, 검진 차수 포함)</strong>·놀이의 시각과 값, 메모</td></tr><tr><td>성장</td><td>몸무게·키·머리둘레</td></tr><tr><td>처음</td><td>첫 뒤집기 같은 순간의 이름·날짜·메모</td></tr><tr><td>일기 (일기를 쓰는 경우)</td><td>제목, 내용, 고른 카테고리(행동·발달·언어·생활)와 한 줄 글, 특별한 날 표시</td></tr></tbody></table></div>
+<p><strong>저장 위치</strong> — 기기에 저장되며, 함께 쓰기를 켠 경우 동기화 서버에도 보관됩니다. 서버의 기록은 회원님이 초대한 가구 구성원만 함께 봅니다.</p>
+<h3>2-3. 사진 (넣은 경우에만)</h3>
+<div class="tw"><table><thead><tr><th>항목</th><th>언제</th></tr></thead><tbody><tr><td>아기 얼굴 사진</td><td>오늘 화면에서 아기 사진을 넣은 경우 — 아기 한 명에 한 장</td></tr><tr><td>일기 사진</td><td>일기에 사진을 넣은 경우 — 하루 최대 10장</td></tr></tbody></table></div>
+<ul><li><strong>회원님이 고르거나 찍은 사진만</strong> 받습니다. 사진 보관함 전체를 읽지 않습니다</li><li>사진은 <strong>작게 줄여 다시 저장</strong>합니다(아기 얼굴 사진은 가로·세로 512픽셀 이하). 이때 촬영 위치 등 사진 파일에 들어 있던 부가 정보는 따라가지 않습니다</li><li><strong>저장 위치</strong> — 기기에 저장되며, 함께 쓰기를 켠 경우 동기화 서버에도 보관됩니다. 서버의 사진은 회원님이 초대한 가구 구성원만 받을 수 있습니다</li></ul>
+<h3>2-4. 민감정보가 다른 사람에게 보이는 경우와 보이지 않게 하는 방법</h3>
+<div class="tw"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>누구에게 보이나</strong></td><td>함께 쓰기로 <strong>회원님이 초대해 참여한 가구 구성원</strong>에게만 아기 기록·사진이 보입니다. 그 밖의 누구에게도 공개하지 않습니다</td></tr><tr><td><strong>보이지 않게 하려면</strong></td><td>가족을 초대하지 않으면 아무에게도 보이지 않습니다. 설정에서 <strong>함께 쓰기를 끄면</strong> 새 기록이 더는 공유되지 않습니다</td></tr><tr><td><strong>알아 두실 것</strong></td><td>이미 공유된 기록은 참여한 가족의 기기와 가구 서버에 남습니다. 가구에서 구성원을 내보내는 기능은 아직 없습니다 — 원하시면 10절 연락처로 요청해 주세요</td></tr></tbody></table></div>
+<h3>2-5. 수집하지 않는 것</h3>
+<ul><li><strong>위치 정보, 연락처, 마이크, 광고 식별자(IDFA)를 수집하지 않습니다</strong></li><li><strong>사진 보관함 전체에 접근하지 않습니다</strong> — 회원님이 고른 사진만 받습니다</li><li>이용 행태를 추적하는 분석 도구를 넣지 않았습니다</li></ul>
 <h2>3. 이용 목적</h2>
-<p>수집한 정보는 <strong>기록·조회·패턴 표시</strong>와 <strong>회원님 기기 간 동기화</strong>에만 씁니다.</p>
-<p><strong>아기 기록을 광고나 분석 목적으로 이용하지 않습니다.</strong> 제3자에게 판매·대여하지 않습니다.</p>
+<p>수집한 정보는 <strong>기록·조회·패턴 표시</strong>, <strong>회원님 기기 간 동기화</strong>, <strong>초대한 가족과 함께 보기</strong>에만 씁니다. 사진은 기록·일기와 함께 보여 주는 데만 씁니다.</p>
+<p><strong>아기 기록과 사진을 광고나 분석 목적으로 이용하지 않습니다.</strong> 제3자에게 판매·대여하지 않습니다.</p>
 <h2>4. 보관 기간</h2>
-<div class="tw"><table><thead><tr><th>대상</th><th>기간</th></tr></thead><tbody><tr><td>계정 정보</td><td><strong>회원 탈퇴 즉시 삭제. 별도 보관 기간을 두지 않습니다</strong></td></tr><tr><td>아기 기록</td><td>회원님이 삭제할 때까지. 저희가 보관하는 사본이 없습니다</td></tr></tbody></table></div>
-<p><strong>유예 기간이 없습니다.</strong> 저희 서버에 사본이 없어 보관할 대상 자체가 없기 때문입니다.</p>
+<div class="tw"><table><thead><tr><th>대상</th><th>기간</th></tr></thead><tbody><tr><td>계정 정보</td><td><strong>회원 탈퇴 즉시 삭제. 별도 보관 기간을 두지 않습니다</strong></td></tr><tr><td>기기의 기록·사진</td><td>회원님이 삭제할 때까지</td></tr><tr><td>서버의 기록·사진 (함께 쓰기)</td><td>회원님이 지우거나 탈퇴할 때까지. <strong>가구에 다른 구성원이 남아 있으면</strong> 그 가족의 기록이기도 하므로 서버에 남고, <strong>마지막 구성원이 탈퇴하면</strong> 가구의 기록·사진·초대가 모두 지워집니다</td></tr><tr><td>동기화 세션 토큰</td><td>최대 90일</td></tr><tr><td>가구에 남는 기록의 기기 식별자</td><td>가구에 다른 구성원이 남으면, 회원님이 남긴 기록과 함께 <strong>그 기록을 만든 기기의 무작위 식별자</strong>가 남습니다. 계정은 지워지므로 누구의 것인지 잇지 않습니다</td></tr></tbody></table></div>
+<p><strong>탈퇴하면 바로 지우고, 유예 기간을 두지 않습니다.</strong> 다만 서버 운영사(Cloudflare)의 데이터베이스는 장애 복구를 위해 <strong>최대 30일</strong> 동안 과거 시점으로 되돌릴 수 있는 기록을 자동으로 남기며, 이 기록은 그 기간이 지나면 사라집니다. 저희는 이 기록을 장애 복구 외의 목적으로 쓰지 않습니다.</p>
+<h3>4-1. 파기 절차와 방법</h3>
+<div class="tw"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>절차</strong></td><td>탈퇴하거나 기록·일기·사진을 지우면 <strong>지체 없이</strong> 파기합니다. 기록을 고치면 고치기 전 값도 파기합니다 — 서버에는 무엇이 지워졌는지 알리는 표시만 남습니다(가족 기기에서도 지우기 위해서입니다). 가구의 마지막 구성원이 탈퇴하면 그 가구의 기록·사진·초대를 모두 파기합니다</td></tr><tr><td><strong>방법</strong></td><td>서버의 기록과 사진은 <strong>복원할 수 없도록 영구 삭제</strong>합니다. 서버 운영사의 장애 복구 기록은 최대 30일 뒤 자동으로 사라집니다 (4절)</td></tr><tr><td><strong>법령에 따라 보존하는 정보</strong></td><td>없습니다</td></tr></tbody></table></div>
 <blockquote><strong>탈퇴와 기록 삭제는 별개입니다.</strong> 탈퇴할 때 &quot;기록도 함께 지울지&quot; 를 따로 여쭙니다. 동기화를 그만두려는 분의 기록을 부수 효과로 지우지 않기 위해서입니다. 기록을 남기기로 하면 기기에 그대로 남습니다.</blockquote>
 <h2>5. 제3자 제공 및 처리 위탁</h2>
-<p><strong>제3자에게 제공하지 않습니다.</strong> 다만 아래 서비스가 기술적으로 관여합니다.</p>
-<div class="tw"><table><thead><tr><th>서비스</th><th>무엇을</th><th>비고</th></tr></thead><tbody><tr><td>Apple iCloud (CloudKit)</td><td>동기화를 켠 경우 아기 기록</td><td><strong>회원님 본인의 iCloud 계정</strong>에 저장됩니다. 저희는 접근 권한이 없습니다</td></tr><tr><td>Apple 로그인</td><td>이름·이메일</td><td>회원님이 이메일 가리기를 선택할 수 있습니다</td></tr></tbody></table></div>
+<p><strong>제3자에게 제공하지 않습니다.</strong></p>
+<h3>처리 위탁</h3>
+<div class="tw"><table><thead><tr><th>수탁자</th><th>위탁하는 업무</th></tr></thead><tbody><tr><td>Cloudflare, Inc.</td><td>함께 쓰기를 켠 경우 기록·사진·계정 식별자·기기 식별자의 보관과 처리 — 동기화 서버와 사진 저장소 운영</td></tr></tbody></table></div>
+<h3>로그인 제공자 — 위탁·제3자 제공이 아닙니다</h3>
+<p>회원님이 각 회사와 직접 로그인하고, 조이로그는 그 결과만 받습니다.</p>
+<div class="tw"><table><thead><tr><th>로그인</th><th>조이로그가 받는 것</th></tr></thead><tbody><tr><td>Apple</td><td>로그인 확인 결과 · 이름·이메일(Apple 이 주는 범위 — 이메일 가리기를 고를 수 있습니다)</td></tr><tr><td>카카오</td><td>로그인 확인 결과 · 이름·이메일(카카오가 주는 범위)</td></tr><tr><td>Google</td><td>로그인 확인 결과 · 이름·이메일(Google 이 주는 범위)</td></tr></tbody></table></div>
+<blockquote>1.0.3 이하 버전에서 iCloud 동기화를 쓰셨다면 그때의 기록이 <strong>회원님 본인의 iCloud 계정</strong>에 남아 있을 수 있습니다. 1.0.4 부터 조이로그는 iCloud 를 동기화에 쓰지 않으며, 저희는 그 데이터에 접근할 수 없습니다.</blockquote>
 <h3>국외 이전</h3>
-<p>동기화를 켜시면 아기 기록이 <strong>회원님 본인의 iCloud 계정</strong>에 저장되며, Apple 의 서버는 국외에 있을 수 있습니다. Apple 로그인 과정에서 제공되는 이름·이메일도 마찬가지입니다.</p>
-<div class="tw"><table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>이전되는 개인정보</td><td>아기 기록(동기화를 켠 경우) · 로그인 시 제공되는 이름·이메일</td></tr><tr><td>이전받는 자</td><td>Apple Inc.</td></tr><tr><td>이전 국가</td><td>Apple 이 iCloud·Apple 로그인을 운영하는 국가</td></tr><tr><td>이전 시기·방법</td><td>동기화 사용 시 또는 로그인 시, 네트워크를 통해</td></tr><tr><td>이용 목적</td><td>회원님 기기 간 동기화 및 로그인</td></tr><tr><td>보유 기간</td><td>회원님이 삭제할 때까지</td></tr><tr><td><strong>거부 방법</strong></td><td><strong>동기화를 켜지 않으면 기록이 기기 밖으로 나가지 않습니다.</strong> 로그인 없이도 모든 기록 기능을 쓸 수 있습니다</td></tr></tbody></table></div>
-<blockquote><strong>저희 서버로는 전송되지 않습니다.</strong> 위 이전은 회원님과 Apple 사이에서 일어나며, 저희는 그 데이터에 접근할 수 없습니다.</blockquote>
+<p><strong>근거</strong> — 개인정보 보호법 제28조의8 제1항 제3호 가목: 회원님과의 계약(함께 쓰기)을 이행하는 데 필요한 처리위탁·보관으로서 아래 사항을 이 방침에 공개합니다.</p>
+<div class="tw"><table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>이전되는 개인정보</td><td>함께 쓰기를 켠 경우의 기록(2-2) · 사진(2-3) · 계정 식별자 · 기기 식별자 · 동기화 세션 토큰</td></tr><tr><td>이전받는 자</td><td><strong>Cloudflare, Inc.</strong> · 101 Townsend St., San Francisco, CA 94107, USA · privacyquestions@cloudflare.com</td></tr><tr><td>이전 국가</td><td>미국 등 Cloudflare 가 인프라를 운영하는 국가</td></tr><tr><td>이전 시기·방법</td><td>함께 쓰기를 쓰는 동안 동기화할 때마다, 네트워크를 통해</td></tr><tr><td>이용 목적</td><td>동기화 서버와 사진 저장소 운영</td></tr><tr><td>보유 기간</td><td>4절과 같습니다</td></tr><tr><td><strong>거부 방법·절차</strong></td><td>함께 쓰기를 켜지 않거나 설정에서 끕니다. <strong>함께 쓰기를 켜지 않으면 기록과 사진이 기기 밖으로 나가지 않습니다</strong></td></tr><tr><td><strong>거부의 효과</strong></td><td>초대한 가족과 함께 보기와 기기를 바꿀 때 이어받기를 쓸 수 없습니다. <strong>기기 안의 기록 기능은 그대로</strong> 쓸 수 있습니다</td></tr></tbody></table></div>
+<p>Apple·Google 로그인 과정의 이름·이메일은 회원님과 해당 회사 사이에서 오가며, 그 회사의 서버는 국외에 있을 수 있습니다. 문의: support@joylog.app</p>
 <h2>6. 이용자의 권리</h2>
-<div class="tw"><table><thead><tr><th>권리</th><th>행사 방법</th></tr></thead><tbody><tr><td><strong>열람·내보내기</strong></td><td>설정 → <strong>CSV로 내보내기</strong></td></tr><tr><td><strong>정정</strong></td><td>각 기록을 직접 수정</td></tr><tr><td><strong>삭제</strong></td><td>기록 개별 삭제 / 설정 → 회원 탈퇴 시 &quot;기록도 삭제&quot; 선택</td></tr><tr><td><strong>동의 철회</strong></td><td>마케팅 동의는 설정에서 언제든 해제</td></tr></tbody></table></div>
-<p>회원 탈퇴는 <strong>앱 안에서</strong> 할 수 있습니다. 이메일 문의를 요구하지 않습니다.</p>
+<div class="tw"><table><thead><tr><th>권리</th><th>행사 방법</th></tr></thead><tbody><tr><td><strong>열람</strong></td><td>앱에서 모든 기록·일기·사진을 볼 수 있습니다</td></tr><tr><td><strong>내보내기</strong></td><td>설정 → <strong>CSV로 내보내기</strong> (기록)</td></tr><tr><td><strong>정정</strong></td><td>각 기록·일기를 직접 수정</td></tr><tr><td><strong>삭제</strong></td><td>기록·일기 개별 삭제 · 아기 얼굴 사진은 오늘 화면에서 <strong>&quot;기본 이미지로 되돌리기&quot; — 기기와 서버에서 함께 지워집니다</strong> · 설정 → 회원 탈퇴 시 &quot;기록도 삭제&quot; 선택</td></tr><tr><td><strong>처리정지 요구</strong></td><td>함께 쓰기를 끄면 서버로 새로 보내지 않습니다 · 그 밖의 정지는 10절 연락처로 요구</td></tr><tr><td><strong>동의 철회</strong></td><td>마케팅 동의는 설정에서 언제든 해제 · 개인정보·민감정보 동의는 회원 탈퇴로 철회하거나 10절 연락처로 요구</td></tr></tbody></table></div>
+<ul><li><strong>아기의 권리는 보호자(법정대리인)인 회원님이</strong> 위 방법으로 행사합니다</li><li>10절 연락처로 요구하시면 <strong>지체 없이</strong> 처리하고 결과를 알려 드립니다</li><li>회원 탈퇴는 <strong>앱 안에서</strong> 할 수 있습니다. 이메일 문의를 요구하지 않습니다</li></ul>
 <h2>7. 만 14세 미만</h2>
-<p>만 14세 이상만 가입할 수 있습니다. 가입 시 확인받습니다. <strong>기록의 대상인 아기는 이용자가 아닙니다</strong> — 보호자가 자신의 기기에 남기는 기록입니다.</p>
+<p>만 14세 이상만 가입할 수 있습니다. 가입 시 확인받습니다. <strong>기록의 대상인 아기는 이용자가 아닙니다</strong> — 아기의 사진과 일기를 포함해, 보호자가 자신의 기기에 남기는 기록입니다. 아기의 개인정보에 대한 동의(0절)는 <strong>보호자(법정대리인)로서</strong> 하시는 동의입니다.</p>
 <h2>8. 안전성 확보 조치</h2>
-<ul><li>인증 토큰은 iOS <strong>Keychain</strong> 에 저장합니다</li><li>기록은 앱 샌드박스와 App Group 컨테이너 안에 있습니다</li><li>로그에 아기 이름·생년월일·기록 내용을 남기지 않습니다</li></ul>
+<ul><li>서버와의 통신은 <strong>암호화(HTTPS)</strong> 합니다</li><li>인증 토큰은 iOS <strong>Keychain</strong> 에 저장합니다</li><li>기록은 앱 샌드박스와 App Group 컨테이너 안에 있습니다</li><li><strong>서버의 기록과 사진은 그 가구의 구성원만 받을 수 있습니다</strong> — 요청마다 구성원인지 확인합니다</li><li>로그에 아기 이름·생년월일·기록 내용·일기·사진을 남기지 않습니다</li></ul>
 <h2>9. 방침 변경</h2>
-<p>이 방침이 바뀌면 앱에서 알리고 <strong>다시 동의를 받습니다.</strong> 동의 이력에 버전이 기록되어, 버전이 바뀌면 이전 동의는 무효가 됩니다.</p>
+<p>이 방침이 바뀌면 앱에서 알리고 <strong>다시 동의를 받습니다.</strong> 동의 이력에 버전이 기록되어, 버전이 바뀌면 이전 동의는 무효가 됩니다. <strong>다시 동의하시기 전에는 함께 쓰기 서버로 새로 보내지 않습니다</strong> — 기기 안의 기록은 그대로 쓸 수 있습니다.</p>
 <h2>10. 개인정보 보호책임자 및 문의</h2>
 <div class="tw"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>개인정보 보호책임자</strong></td><td>조진현</td></tr><tr><td><strong>연락처</strong></td><td>joynevlog@gmail.com</td></tr></tbody></table></div>
 <p>조이로그는 개인 개발자가 운영합니다. 개인정보보호법 제31조에 따라 <strong>운영자가 개인정보 보호책임자를 겸합니다.</strong></p>
 <p>개인정보와 관련한 문의·불만·피해 구제는 위 연락처로 주시면 됩니다.</p>
+<h2>11. 자동으로 수집하는 장치</h2>
+<p>쿠키 등 이용 행태를 자동으로 수집하는 장치를 <strong>설치·운영하지 않습니다.</strong></p>
+<h2>12. 권익침해 구제</h2>
+<p>조이로그의 처리에 만족하지 못하시면 아래 기관에 도움을 받으실 수 있습니다.</p>
+<div class="tw"><table><thead><tr><th>기관</th><th>연락처</th></tr></thead><tbody><tr><td>개인정보침해신고센터</td><td>국번없이 118</td></tr><tr><td>개인정보분쟁조정위원회</td><td>1833-6972</td></tr></tbody></table></div>
+<hr>
+<h2>개정 이력</h2>
+<div class="tw"><table><thead><tr><th>버전</th><th>바뀐 것</th></tr></thead><tbody><tr><td><code>2026-09-13</code> (이번)</td><td><strong>사진</strong>(아기 얼굴 사진·일기 사진)과 <strong>일기</strong>를 수집 항목에 더함 · <strong>병원 기록의 백신 종류·차수·검진 차수</strong>를 조건부로 더함 · 「사진을 수집하지 않습니다」 삭제 · <strong>기기 식별자</strong> 명시 · 서버 보관 기간을 실제대로(가구에 남는 구성원 · 운영사 복구 기록 최대 30일) · 위탁사 <strong>Cloudflare</strong> 와 <strong>카카오·Google 로그인</strong> 명시 · 1.0.4 부터 쓰지 않는 iCloud 조항 정리 · 아기 사진 삭제 경로 · 재동의 전 서버 미전송 · <strong>법률 검토 반영</strong> — 민감정보 별도 동의 · 파기 · 민감정보 공개 · 국외 이전 근거·연락처 · 권리 · 권익침해 구제</td></tr><tr><td><code>2026-09-01</code></td><td>첫 게시 (2026-09-04 서버 도입 반영)</td></tr></tbody></table></div>
 <footer>조이로그 · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a> · <a href="/support">도움말</a></footer>
 </main></body></html>
