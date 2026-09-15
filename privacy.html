@@ -31,7 +31,7 @@ font-size:.82rem;color:var(--mut)}
 </style></head><body><main>
 <nav class="top"><a href="/">조이로그</a></nav>
 <h1>개인정보처리방침 — 조이로그</h1>
-<p><strong>시행일</strong>: <code>2026-09-13</code> (재동의 빌드 출시일) · <strong>버전</strong>: 시행일과 같은 값 · <strong>이전 버전</strong>: <code>2026-09-01</code></p>
+<p><strong>시행일</strong>: <code>2026-09-15</code> (1.1.3 제출일 · 재동의) · <strong>버전</strong>: 시행일과 같은 값 · <strong>이전 버전</strong>: <code>2026-09-13</code></p>
 <hr>
 <h2>0. 동의 안내 — 동의할 때 알려 드리는 것</h2>
 <p>로그인할 때 아래 동의를 <strong>항목마다 따로</strong> 받습니다. 아기의 건강 기록은 민감정보라서 <strong>다른 동의와 별도로</strong> 받습니다. 아기의 개인정보에 대한 동의는 <strong>보호자(법정대리인)로서</strong> 하시는 동의입니다.</p>
@@ -42,7 +42,9 @@ font-size:.82rem;color:var(--mut)}
 <h2>2. 수집하는 개인정보</h2>
 <h3>2-1. 계정 정보 (로그인한 경우에만)</h3>
 <p>로그인은 <strong>선택</strong>입니다. 로그인하지 않아도 모든 기록 기능을 쓸 수 있습니다.</p>
-<div class="tw"><table><thead><tr><th>항목</th><th>출처</th><th>저장 위치</th></tr></thead><tbody><tr><td>이름(표시 이름)</td><td>로그인 제공자(Apple·카카오·Google)가 제공하는 범위</td><td>기기</td></tr><tr><td>이메일</td><td>〃</td><td>기기</td></tr><tr><td>동의 이력 (약관·개인정보·만 14세·마케팅, 동의 시각, 버전)</td><td>이용자 입력</td><td>기기</td></tr><tr><td>인증 토큰</td><td>로그인 제공자</td><td><strong>기기 Keychain</strong></td></tr><tr><td>계정 식별자 (가명화된 무작위 ID 와 로그인 제공자 종류)</td><td>로그인 시 서버가 생성</td><td>동기화 서버</td></tr><tr><td>동기화 세션 토큰</td><td>로그인 시 서버가 발급</td><td>기기 Keychain + 서버(최대 90일)</td></tr><tr><td>기기 식별자 (앱 설치마다 만드는 무작위 값 — <strong>광고 식별자가 아닙니다</strong>)</td><td>앱이 생성</td><td>기기 + 함께 쓰기를 켠 경우 동기화 서버 (기록이 어느 기기에서 왔는지 구분)</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>항목</th><th>출처</th><th>저장 위치</th></tr></thead><tbody><tr><td>이름(표시 이름)</td><td>로그인 제공자(Apple·카카오·Google)가 제공하는 범위</td><td>기기</td></tr><tr><td>이메일</td><td>〃</td><td>기기</td></tr><tr><td>동의 이력 (약관·개인정보·만 14세·마케팅, 동의 시각, 버전)</td><td>이용자 입력</td><td>기기</td></tr><tr><td>인증 토큰</td><td>로그인 제공자</td><td><strong>기기 Keychain</strong></td></tr><tr><td>계정 식별자 (가명화된 무작위 ID 와 로그인 제공자 종류)</td><td>로그인 시 서버가 생성</td><td>동기화 서버</td></tr><tr><td>동기화 세션 토큰</td><td>로그인 시 서버가 발급</td><td>기기 Keychain + 서버(최대 90일)</td></tr><tr><td>기기 식별자 (앱 설치마다 만드는 무작위 값 — <strong>광고 식별자가 아닙니다</strong>)</td><td>앱이 생성</td><td>기기 + 함께 쓰기를 켠 경우 동기화 서버 (기록이 어느 기기에서 왔는지 구분)</td></tr><tr><td>알림 수신 번호 (<strong>푸시 토큰</strong> — 애플이 이 휴대폰에 알림을 보내려고 발급하는 값)</td><td>Apple</td><td>동기화 서버 (수유 간격 알림을 <strong>함께 쓰는 분에게도</strong> 보내기 위해)</td></tr><tr><td>수유 간격 알림 설정 (받을지 · 소리를 켤지 · 조용한 시간)</td><td>회원님 입력</td><td>기기 + 동기화 서버</td></tr><tr><td>다음 알림 시각 (아기마다 <strong>한 개의 시각</strong>)</td><td>앱이 계산</td><td>동기화 서버</td></tr></tbody></table></div>
+<p><strong>수유 간격 자체는 서버로 보내지 않습니다.</strong> 앱이 기기 안에서 다음 알림 시각을 계산해 <strong>그 시각 하나만</strong> 보냅니다.</p>
+<p><strong>이 세 가지는 수유 간격 알림을 켠 경우에만</strong> 서버에 저장됩니다. 끄면 보내지 않고, 탈퇴하면 알림 수신 번호까지 함께 지워집니다.</p>
 <p><strong>이름과 이메일은 서버에 저장하지 않습니다.</strong> 로그인 확인 순간에만 스쳐 지나가며, 서버에는 가명화된 식별자만 남습니다.</p>
 <h3>2-2. 아기 정보와 기록</h3>
 <p><strong>이른둥이 주수와 기록(활동 기록·성장·처음·일기)은 아동의 건강에 관한 정보 — 개인정보 보호법 제23조의 민감정보로 보고 따로 동의를 받습니다 (0절).</strong> 이름·태명·생년월일·출생 시각·성별은 개인정보 수집·이용 동의로 받습니다.</p>
@@ -96,6 +98,6 @@ font-size:.82rem;color:var(--mut)}
 <div class="tw"><table><thead><tr><th>기관</th><th>연락처</th></tr></thead><tbody><tr><td>개인정보침해신고센터</td><td>국번없이 118</td></tr><tr><td>개인정보분쟁조정위원회</td><td>1833-6972</td></tr></tbody></table></div>
 <hr>
 <h2>개정 이력</h2>
-<div class="tw"><table><thead><tr><th>버전</th><th>바뀐 것</th></tr></thead><tbody><tr><td><code>2026-09-13</code> (이번)</td><td><strong>사진</strong>(아기 얼굴 사진·일기 사진)과 <strong>일기</strong>를 수집 항목에 더함 · <strong>병원 기록의 백신 종류·차수·검진 차수</strong>를 조건부로 더함 · 「사진을 수집하지 않습니다」 삭제 · <strong>기기 식별자</strong> 명시 · 서버 보관 기간을 실제대로(가구에 남는 구성원 · 운영사 복구 기록 최대 30일) · 위탁사 <strong>Cloudflare</strong> 와 <strong>카카오·Google 로그인</strong> 명시 · 1.0.4 부터 쓰지 않는 iCloud 조항 정리 · 아기 사진 삭제 경로 · 재동의 전 서버 미전송 · <strong>법률 검토 반영</strong> — 민감정보 별도 동의 · 파기 · 민감정보 공개 · 국외 이전 근거·연락처 · 권리 · 권익침해 구제</td></tr><tr><td><code>2026-09-01</code></td><td>첫 게시 (2026-09-04 서버 도입 반영)</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>버전</th><th>바뀐 것</th></tr></thead><tbody><tr><td><code>2026-09-15</code> (이번)</td><td><strong>수유 간격 알림을 함께 쓰는 분과 나눠 받는 기능</strong>이 생기면서, 그 알림을 보내는 데 필요한 <strong>알림 수신 번호(푸시 토큰)</strong> · <strong>알림 설정</strong>(받을지·소리·조용한 시간) · <strong>다음 알림 시각</strong>을 수집 항목에 더함 (2-1). <strong>수유 간격 자체와 수유 시각은 새로 보내지 않음</strong> — 앱이 기기 안에서 계산해 시각 하나만 보냄</td></tr><tr><td><code>2026-09-13</code></td><td><strong>사진</strong>(아기 얼굴 사진·일기 사진)과 <strong>일기</strong>를 수집 항목에 더함 · <strong>병원 기록의 백신 종류·차수·검진 차수</strong>를 조건부로 더함 · 「사진을 수집하지 않습니다」 삭제 · <strong>기기 식별자</strong> 명시 · 서버 보관 기간을 실제대로(가구에 남는 구성원 · 운영사 복구 기록 최대 30일) · 위탁사 <strong>Cloudflare</strong> 와 <strong>카카오·Google 로그인</strong> 명시 · 1.0.4 부터 쓰지 않는 iCloud 조항 정리 · 아기 사진 삭제 경로 · 재동의 전 서버 미전송 · <strong>법률 검토 반영</strong> — 민감정보 별도 동의 · 파기 · 민감정보 공개 · 국외 이전 근거·연락처 · 권리 · 권익침해 구제</td></tr><tr><td><code>2026-09-01</code></td><td>첫 게시 (2026-09-04 서버 도입 반영)</td></tr></tbody></table></div>
 <footer>조이로그 · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a> · <a href="/support">도움말</a></footer>
 </main></body></html>
