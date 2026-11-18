@@ -12,20 +12,30 @@
   @media (prefers-color-scheme: dark) { body { background:#17161a; color:#e9e6e0; } }
   main { max-width:32rem; padding:2rem 1.5rem; text-align:center; }
   h1 { font-size:1.75rem; margin:0 0 .5rem; letter-spacing:-.02em; }
-  p  { margin:0 0 2rem; line-height:1.7; opacity:.75; font-size:.95rem; }
+  p  { margin:0 0 2rem; line-height:1.7; opacity:.75; font-size:.95rem; word-break:keep-all; }
   nav a { display:inline-block; margin:0 .5rem; font-size:.9rem; color:inherit; opacity:.6; }
   nav a:hover { opacity:1; }
+  .stores { display:flex; flex-wrap:wrap; justify-content:center; gap:.6rem; margin:0 0 2rem; }
+  .store { display:inline-block; padding:.85rem 1.6rem; border-radius:1rem; background:#e08960;
+           color:#fff; text-decoration:none; font-weight:600; font-size:.95rem; }
+  .store:active { opacity:.85; }
+  .biz { margin-top:2.5rem; font-size:.75rem; line-height:1.8; opacity:.5; }
 </style>
 </head>
 <body>
 <main>
   <h1>조이로그</h1>
-  <p>아기의 하루를 기록하고, 그 기록에서 아기만의 리듬을 찾습니다.<br>iOS 앱을 준비하고 있습니다.</p>
+  <p>아기의 하루를 기록하고, 그 기록에서 아기만의 리듬을 찾습니다.</p>
+  <div class="stores">
+    <a class="store" href="https://apps.apple.com/kr/app/id6804470047">App Store에서 받기</a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=app.joylog.android">Google Play에서 받기</a>
+  </div>
   <nav>
     <a href="/privacy">개인정보처리방침</a>
     <a href="/terms">이용약관</a>
     <a href="/support">도움말</a>
   </nav>
+  <p class="biz">콘페토(confetto) · 대표 조진현 · 사업자등록번호 128-42-01457<br>joynevlog@gmail.com</p>
 </main>
 </body>
 </html>
